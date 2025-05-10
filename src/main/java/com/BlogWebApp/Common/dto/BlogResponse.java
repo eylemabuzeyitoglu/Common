@@ -1,4 +1,4 @@
-package com.BlogWebApp.CommonSecurity.dto;
+package com.BlogWebApp.Common.dto;
 
 import lombok.*;
 

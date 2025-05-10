@@ -1,6 +1,6 @@
-package com.BlogWebApp.CommonSecurity.config;
+package com.BlogWebApp.Common.config;
 
-import com.BlogWebApp.CommonSecurity.security.JwtAuthenticationFilter;
+import com.BlogWebApp.Common.security.JwtAuthenticationFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

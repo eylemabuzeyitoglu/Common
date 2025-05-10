@@ -1,4 +1,4 @@
-package com.BlogWebApp.CommonSecurity.security;
+package com.BlogWebApp.Common.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
