@@ -1,6 +1,6 @@
-package com.BlogWebApp.CommonSecurity.security;
+package com.BlogWebApp.Common.security;
 
-import com.BlogWebApp.CommonSecurity.client.AuthServiceClient;
+import com.BlogWebApp.Common.client.AuthServiceClient;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

@@ -1,4 +1,4 @@
-package com.BlogWebApp.CommonSecurity.client;
+package com.BlogWebApp.Common.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;

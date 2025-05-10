@@ -1,4 +1,4 @@
-package com.BlogWebApp.CommonSecurity;
+package com.BlogWebApp.Common;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
