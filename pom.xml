@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.BlogWebApp</groupId>
-	<artifactId>CommonSecurity</artifactId>
+	<artifactId>Common</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>CommonSecurity</name>
