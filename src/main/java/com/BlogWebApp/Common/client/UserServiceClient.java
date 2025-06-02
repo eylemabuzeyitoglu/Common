@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(name = "user-service", url = "http://localhost:8082")
+@FeignClient(name = "user-service", url = "http://localhost:8082/api/user")
 public interface UserServiceClient {
     
-    @GetMapping("/api/users/email/{email}")
+    @GetMapping("/email/{email}")
     UserResponse getUserByEmail(@PathVariable String email);
     
-    @PostMapping("/api/users")
+    @PostMapping("/")
     UserResponse createUser(@RequestBody UserResponse response);
     
-    @GetMapping("/api/users/{id}")
+    @GetMapping("/{id}")
     UserResponse getUserById(@PathVariable Long id);
 } 
