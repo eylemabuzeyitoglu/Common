@@ -4,6 +4,8 @@ import com.BlogWebApp.Common.security.JwtAuthenticationFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
@@ -21,8 +23,8 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable()) // CSRF korumasını kapat
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/auth/**").permitAll() // Giriş işlemleri serbest
-                        .requestMatchers("/user/**").authenticated() // Kimliği doğrulanmış kullanıcılar
+                        .requestMatchers("/api/auth/**").permitAll() // Giriş işlemleri serbest
+                        .requestMatchers("/api/user/**").authenticated() // Kimliği doğrulanmış kullanıcılar
                         .requestMatchers("/api/blog/**").permitAll() // Blog erişimi serbest
                         .anyRequest().denyAll() // Diğer tüm istekler reddedilir
                 )
@@ -31,4 +33,8 @@ public class SecurityConfig {
         return http.build();
     }
 
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 }

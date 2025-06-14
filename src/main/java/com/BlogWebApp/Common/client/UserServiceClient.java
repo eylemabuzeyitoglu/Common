@@ -1,6 +1,6 @@
 package com.BlogWebApp.Common.client;
 
-import com.BlogWebApp.Common.dto.UserResponse;
+import com.BlogWebApp.Common.dto.response.UserResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

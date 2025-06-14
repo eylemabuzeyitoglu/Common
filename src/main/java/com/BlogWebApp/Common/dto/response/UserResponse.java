@@ -1,4 +1,4 @@
-package com.BlogWebApp.Common.dto;
+package com.BlogWebApp.Common.dto.response;
 
 import com.BlogWebApp.Common.model.Role;
 import lombok.*;

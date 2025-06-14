@@ -1,4 +1,4 @@
-package com.BlogWebApp.Common.dto;
+package com.BlogWebApp.Common.dto.response;
 
 import lombok.*;
 
@@ -7,10 +7,11 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class CommentRequest {
+public class CommentResponse {
 
     private Long blogId;
     private Long userId;
+    private Long commentId;
     private String comment;
 
 }

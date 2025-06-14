@@ -1,6 +1,7 @@
-package com.BlogWebApp.Common.dto;
+package com.BlogWebApp.Common.dto.request;
 
 
+import com.BlogWebApp.Common.dto.UserRole;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.validation.constraints.Email;
