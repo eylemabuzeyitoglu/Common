@@ -21,6 +21,7 @@ public class UserRequest {
     private String email;
     @NotBlank
     private String password;
+
     @Enumerated(EnumType.STRING)
     private UserRole role;
 
